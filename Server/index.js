@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-    origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+    origin:'https://job-portal-app-1-vxbo.onrender.com',
     credentials: true,
 }
 app.use(cors(corsOptions));
